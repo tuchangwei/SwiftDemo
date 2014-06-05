@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-                            
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let MyContant = "I am Contant"
@@ -109,17 +111,67 @@ class ViewController: UIViewController {
         }
         
         
+       
+        var str = greet(yourname: "Tu", today: "Tuesday")
+        println(str)
         
         
+        println(getGasPrices())
         
+        //how to get the each value of the tuple.
+        let (x,y,z) = getGasPrices()
         
+        println("x:\(x) y:\(y) z:\(z)")
+        
+        println(sumOf(1,2,3))
+        
+        println(returnFifteen())
+        
+//        var increment = makeIncrementer()
+//        println(increment(7))
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func greet(yourname name: String, today day: String) -> String {
+        
+        return "Hello \(name), today is \(day)."
     }
-
+    
+    func getGasPrices() -> (Double, Double, Double) {
+        
+        return (1.2,2.3,3.2)
+    }
+    
+    // take a variable number of arguments, collecting them into an array.
+    func sumOf(numbers: Int...) -> Int {
+        
+        var sum = 0;
+        for num in numbers {
+            
+            sum += num;
+        }
+        return sum
+    }
+    
+    
+    //nested functions
+    func returnFifteen() -> Int {
+        
+        var y = 10
+        func add () -> Int {
+            
+            return y+5
+        }
+        return add()
+    }
+    
+//    func makeIncrementer() -> (Int -> Int) {
+//        
+//        func addOne(number: Int) -> Int {
+//            
+//            return 1 + number
+//        }
+//        return addOne
+//    }
 
 }
 
