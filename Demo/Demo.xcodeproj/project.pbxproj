@@ -34,6 +34,7 @@
 		34A82D5A193F694400399089 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A82D5F193F694400399089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34A82D60193F694400399089 /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
+		CF5F915C194188C900DFCE62 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 				34A82D51193F694400399089 /* Main.storyboard */,
 				34A82D54193F694400399089 /* Images.xcassets */,
 				34A82D4B193F694400399089 /* Supporting Files */,
+				CF5F915C194188C900DFCE62 /* MyPlayground.playground */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -397,6 +399,7 @@
 				34A82D66193F694400399089 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34A82D67193F694400399089 /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +408,7 @@
 				34A82D69193F694400399089 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
